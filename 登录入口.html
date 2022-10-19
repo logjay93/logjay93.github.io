@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style type="text/css">
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  font-family: sans-serif;
+  
+}
+video{
+	position:fixed;
+	right:0px;
+	bottom:0px;
+	min-height:100%;
+	min-width:100%;
+height:auto;
+width:auto;
+	}
+source{
+min-width:100%;
+min-height:100%;
+height:auto;
+width:auto;
+}
+nav{
+	position: absolute;
+	transform: translate(-50% -50%);
+	right:15%;
+	margin:0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	font-size: 22px;
+}
+nav a{
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+	margin: 25px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: aliceblue;
+	font-weight: bold;
+	transition: 0.5s;
+	color: #000;
+}
+nav a:hover{
+	color: #fff;
+}
+.login-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  padding: 60px 40px;
+  background-color: rgba(255,255,255,.8);
+  box-shadow: 0 15px 20px rgba(0,0,0,.2);
+ 
+}
+.login-form h2{
+  margin: 0 0 40px;
+  padding: 0;
+  text-align: center;
+}
+.login-form .form-input{
+  position: relative;
+  margin: 20px 0;
+  
+}
+.login-form .form-input input{
+  outline: none;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  border:1px solid rgba(0,0,0,.5);
+  background: transparent;
+  font-size: 18px;
+  
+}
+.login-form .form-input input[type='submit']{
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  
+}
+.login-form .form-input input[type='submit']:hover{
+  background-color: #0090ff;
+}
+.login-form a{
+  display: block;
+  margin-top: 30px;
+  color:#000;
+  font-weight: 700;
+}
+</style>
+</head>
+<body >
+<video autoplay loop muted>
+<source src="image\登录入口.mp4" type="video/mp4">
+</video>
+<div class="dhl">
+	<nav>
+		<a href="联系我.html">Contact us</a>
+		</nav></div>
+  <div class="login-form">
+    <h2>Sign In</h2>
+    <div class="form-input">
+      <input type="text" name='' placeholder="Email">
+    </div>
+    <div class="form-input">
+      <input type="password" name='' placeholder="password">
+    </div>
+    <div class="form-input">
+    <a href="index.html">
+      <input type="submit" value='Login'>
+      </a>
+    </div>
+    <a href="#" class="forget">Forget password</a>
+  </div>
+</body>
+</html>
